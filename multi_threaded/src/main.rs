@@ -61,6 +61,10 @@ fn main() {
 
     pb.finish_with_message("Analyse terminée.");
 
+    // empty ram by dropping the lines vector
+    println!("Libération de la mémoire...");
+    drop(lines);
+
     display_results(&requests_nb, &ips, &response_codes);
     println!("Temps d'analyse du fichier: {:?}", analysis_time.elapsed());
     println!("Temps total d'exécution du script: {:?}", start_time.elapsed());
@@ -98,6 +102,7 @@ fn process_lines(lines: Vec<String>, requests_nb: Arc<Mutex<u32>>, ips: Arc<Mute
         let mut num_requests = requests_nb.lock().unwrap();
         *num_requests += 1;
 
+        drop(line);
     }
 }
 
