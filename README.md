@@ -13,7 +13,7 @@ Le fichier étant très volumineux, il faut trouver un moyen de l'analyser ligne
 xxx.xx.xx.xxx - - [24/Mar/2024:21:20:21 +0000] "GET /en/std-exchanges/21866-moteur-100mm-iec-6nm-ip54-bmh1002t16a2apr.html HTTP/1.1" 200 71133 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot)"
 
 #### Découpage
-184.30.41.xxx -> Adresse ip source
+xxx.xx.xx.xxx -> Adresse ip source
 
 [24/Mar/2024:21:20:21 +0000] -> DateTime de la requête
 
